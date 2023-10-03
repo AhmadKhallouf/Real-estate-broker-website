@@ -1,0 +1,61 @@
+table{
+    width:700px ;
+    background-color: white;
+    border-bottom: 3px solid #2ba89c;
+    margin: auto;
+   
+}
+table thead{
+    font-weight: bold;
+    background-color: #404040;
+
+}
+
+th{
+    padding :10px;
+    color: white; 
+}
+td{
+   
+    padding :30px;
+    background-color: #EEE;
+    position: relative;
+}
+caption{
+    font-weight: bold;
+    padding: 10px;
+}
+
+.view{
+    font-weight: bold;
+    text-decoration: none;
+    padding: 5px 10px;
+    font-size: 12px;
+    color:white;
+    background-color: #03a9f4;
+    margin-left: 0px;
+}
+.delete{
+    font-weight: bold;
+    text-decoration: none;
+    padding: 5px 10px;
+    font-size: 12px;
+    color:white;
+    background-color: #e91e63;
+}
+
+.block{
+    font-weight: bold;
+    text-decoration: none;
+    padding: 5px 10px;
+    font-size: 12px;
+    color:white;
+    background-color: #1bd152;
+}
+/* a{
+    font-weight: bold;
+    text-decoration: none;
+    padding: 5px 10px;
+    font-size: 12px;
+    color:white;
+} */
