@@ -11,15 +11,19 @@ class AcceptSuccessfully extends Notification
 {
     use Queueable;
 
+    private $post_id;
+    private $time;
+
     
     /**
      * Create a new notification instance.
      *
      * @return void
      */
-    public function __construct()
+    public function __construct($post_id,$time)
     {
-        
+        $this->post_id = $post_id;
+        $this->time = $time;
     }
 
     /**
@@ -43,7 +47,9 @@ class AcceptSuccessfully extends Notification
     public function toArray($notifiable)
     {
         return [
-            'noteAccept'=>'Congratulations, your request is accepted you can see your post in listing page',
+            'noteUpload'=>'Congratulations, your post is accepted,',
+            'post_id' => $this->post_id,
+            'time_of_accept' => $this->time,
         ];
     }
 }

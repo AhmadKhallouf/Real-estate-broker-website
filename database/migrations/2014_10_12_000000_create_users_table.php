@@ -21,7 +21,7 @@ return new class extends Migration
             $table->string('password');
             $table->string('type')->default('user');
             $table->boolean('active')->default(1);
-            $table->integer('phone')->require();
+            $table->string('phone')->require();
             $table->rememberToken();
             $table->timestamps();
         });

@@ -1,0 +1,108 @@
+ /* Random class and ID names */
+        .notification-container {
+            /* Your styles for the notification container */
+           
+            margin-top: 12px;
+            margin-left: 10px;
+           
+            display: inline-block;
+        }
+        
+        .notification-icon {
+            /* Your styles for the notification icon */
+            color: black;
+            width: 25px;
+            height: 25px;
+			font-size: 20px;
+        }
+        
+        .notification-count {
+            /* Your styles for the notification count */
+            background-color: red;
+            color: white;
+            border-radius: 50%;
+            padding: 4px 8px;
+            font-size: 12px;
+           position: absolute;
+            top: -3px;
+            right: -10px;
+        }
+        
+        .notification-dropdown {
+            /* Your styles for the notification dropdown */
+            display: none;
+           position: absolute;
+            
+            background-color: #f9f9f9;
+            min-width: 600px;
+            padding: 10px;
+            box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+            border: 1px solid black;
+            overflow: scroll;
+        }
+        
+        .notification-content {
+            /* Your styles for the notification content */
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            padding-bottom: 10px;
+            border-bottom: 1px solid #ccc;
+        }
+        
+        .notification-title {
+            /* Your styles for the notification title */
+            font-weight: bold;
+			font-size: 12px;
+        }
+        
+        .notification-description {
+            /* Your styles for the notification description */
+            padding: 5px;
+			font-size: 10px;
+			
+        }
+        
+        .notification-links {
+            /* Your styles for the notification link */
+            text-decoration: none;
+            color: blue;
+        }  
+        
+        .notification-image {
+            /* Your styles for the notification image */
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            overflow: hidden;
+            margin-right: 10px;
+        }
+        
+        .notification-divider {
+            /* Your styles for the notification divider */
+            border-top: 1px solid black;
+            margin-top: 10px;
+            padding-top: 10px;
+        }
+        
+        /* Additional styles for the dropdown button */
+        .dropdown-button {
+            /* Your styles for the dropdown button */
+            background-color: #f9f9f9;
+            border: none;
+            color: black;
+            text-align: center;
+            
+            outline: none;
+            width: 50%;
+        }
+        
+        .dropdown-button:hover {
+            background-color: #ddd;
+        }
+        
+        .dropdown-button:after {
+            content: '\25BC';
+            float: right;
+            margin-left: 5px;
+        }

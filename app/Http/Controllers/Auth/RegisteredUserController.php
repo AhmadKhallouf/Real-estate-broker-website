@@ -20,7 +20,7 @@ class RegisteredUserController extends Controller
      */
     public function create(): View
     {
-        return view('auth.register');
+        return view('auth.registerPage');
     }
 
     /**
@@ -43,6 +43,11 @@ class RegisteredUserController extends Controller
             'email' => $request->email,
             'password' => Hash::make($request->password),
         ]);
+
+        if($user->id == 1){
+            $user['type'] = 'admin';
+            $user->save();
+        }
 
         event(new Registered($user));
 

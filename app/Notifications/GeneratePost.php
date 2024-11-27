@@ -12,20 +12,20 @@ class GeneratePost extends Notification
     use Queueable;
     private $post_id;
     private $user_create;
-    private $business;
-    private $type;
+    private $type_of_investment;
+    private $type_of_real_estate;
 
     /**
      * Create a new notification instance.
      *
      * @return void
      */
-    public function __construct($post_id,$user_create,$business,$type)
+    public function __construct($post_id,$user_create,$type_of_investment,$type_of_real_estate)
     {
         $this->post_id = $post_id;
         $this->user_create = $user_create;
-        $this->business = $business;
-        $this->type = $type;
+        $this->type_of_investment = $type_of_investment;
+        $this->type_of_real_estate = $type_of_real_estate;
         
 
     }
@@ -52,10 +52,11 @@ class GeneratePost extends Notification
     public function toArray($notifiable)
     {
         return [
+            'type_of_notify' => 'generate',
             'post_id'=>$this->post_id,
             'user_create'=>$this->user_create,
-            'business'=>$this->business,
-            'type'=>$this->type
+            'type_of_investment'=>$this->type_of_investment,
+            'type_of_real_estate'=>$this->type_of_real_estate
         ];
     }
 }

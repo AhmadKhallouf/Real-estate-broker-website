@@ -153,7 +153,7 @@ section{
    position: relative;
 }
 
-.header .navbar .flex ul li a{
+.header .navbar .flex ul li a {
    display: inline-block;
    padding: 1.2rem 2rem;
    font-size: 1.8rem;
@@ -445,7 +445,7 @@ section{
 .table{
       display: inline-block;
       width: 1200px;
-      overflow: scroll;
+      
 }
 table td{
    padding: 10px;
@@ -1091,4 +1091,16 @@ table td{
 button{ 
    padding: 15px;
    margin: 15px;
+}
+
+.navbar {
+   position: relative;
+   min-height: 50px;
+   margin-bottom: 0px;
+   border: 1px solid transparent;
+ }
+
+.location{
+   width: 273px;
+   height: 45px;
 }

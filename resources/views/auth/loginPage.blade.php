@@ -21,7 +21,7 @@
 
    <nav class="navbar nav-1">
       <section class="flex">
-         <a href="home.html" class="logo"><i class="fas fa-house"></i>MyHome</a>
+         <a href="home.html" class="logo"><i class="fas fa-house"></i>My_RealEstate</a>
 
       </section>
    </nav>

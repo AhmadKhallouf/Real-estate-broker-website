@@ -10,7 +10,7 @@
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
 
    <!-- custom css file link  -->
-   <link rel="stylesheet" href="{{ asset('css/style.css') }}">
+   <link rel="stylesheet" href="css/style.css">
 
 </head>
 <body>
@@ -21,7 +21,7 @@
 
    <nav class="navbar nav-1">
       <section class="flex">
-         <a href="home.html" class="logo"><i class="fas fa-house"></i>MyHome</a>
+         <a href="home.html" class="logo"><i class="fas fa-house"></i>My_RealEstate</a>
 
       </section>
    </nav>
@@ -32,8 +32,8 @@
 
          <div class="menu">
             <ul>
-               <li><a href="{{ route('login') }}">login</a></li>
-               <li><a href="{{ route('register') }}">register</a></li>
+               <li><a href="login.html">login</a></li>
+               <li><a href="register.html">register</a></li>
             </ul>
          </div>
       </section>
@@ -47,15 +47,25 @@
 
 <section class="form-container">
 
-   <form action="{{ route('register') }}" method="post">
+   <form action="{{ route('register') }}" method="POST">
       @csrf
       <h3>create an account!</h3>
-      <input type="tel" name="name" required maxlength="50" placeholder="enter your name" class="box">
-      <input type="email" name="email" required maxlength="50" placeholder="enter your email" class="box">
-      <input type="phone" name="phone" required maxlength="50" placeholder="enter your phone" class="box">
-      <input type="password" name="pass" required maxlength="20" placeholder="enter your password" class="box">
-      <input type="password" name="password_confirmation" required maxlength="20" placeholder="confirm your password" class="box">
-      <p>already have an account? <a href="{{ route('login') }}">login</a></p>
+      <div>
+         <input type="text" name="name" required maxlength="50" placeholder="enter your name" class="box">
+      </div>
+      <div>
+	      <input type="tel" name="phone" required maxlength="50" placeholder="enter your phone" class="box">
+      </div>
+      <div>
+         <input type="email" name="email" required maxlength="50" placeholder="enter your email" class="box">
+      </div>
+      <div>
+         <input type="password" name="password" required maxlength="20" placeholder="enter your password" class="box">
+      </div>
+      <div>
+         <input type="password" name="password_confirmation" required maxlength="20" placeholder="confirm your password" class="box">
+      </div>
+      <p>already have an account? <a href="{{ route('login') }}">login now</a></p>
       <input type="submit" value="register now" name="submit" class="btn">
    </form>
 
@@ -113,7 +123,7 @@
 
 
 <!-- custom js file link  -->
-<script src="{{ asset('js/script.js') }}"></script>
+<script src="js/script.js"></script>
 
 </body>
 </html>
